@@ -1,1 +1,216 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding: 0px 220px;
+}
+
+.header__nameing {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0px;
+  margin-right: 280px;
+}
+
+.header__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  width: 35px;
+}
+
+.header__toggle span {
+  background-color: white;
+  width: 30px;
+  height: 1px;
+}
+
+.header__toggle span:first-of-type {
+  margin-bottom: 2px;
+}
+
+.header__toggle span:last-of-type {
+  margin-top: 3px;
+}
+
+.intro__container {
+  width: 100%;
+  position: relative;
+}
+
+.intro {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 0px;
+  height: calc(100vh - 87.5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 220px;
+}
+
+.intro__title {
+  margin: 0px;
+  margin-right: 0px;
+  text-transform: uppercase;
+  font-size: 74px;
+  line-height: 89px;
+  max-width: 670px;
+  font-weight: 500;
+}
+
+.intro__title::after {
+  content: "систем безопасности видеонаблюдения охранно-пожарных систем";
+  position: absolute;
+  font-size: 17px;
+  max-width: 260px;
+  line-height: 21px;
+  margin-left: 20px;
+  margin-top: 14px;
+  font-weight: 400;
+}
+
+.intro__camera {
+  display: none;
+}
+
+.intro__subtitle {
+  display: none;
+}
+
+.intro__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 177px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  max-width: 370px;
+  margin: 0px;
+}
+
+.intro__text:last-of-type {
+  padding-left: 30px;
+}
+
+.cross {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.cross:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+@media (max-width: 1105px) {
+  .intro__title {
+    font-size: 60px;
+  }
+
+  .intro__title::after {
+    font-size: 13px;
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    max-width: 800px;
+    padding: 0px 80px;
+  }
+
+  .intro {
+    max-width: 800px;
+    padding: 0px 80px;
+  }
+
+  .header__nameing {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 0px 55px;
+  }
+
+  .intro {
+    padding: 0px 55px;
+  }
+
+  .intro__title {
+    font-size: 68px;
+  }
+
+  .intro__title::after {
+    font-size: 15px;
+  }
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI Medium"), local("PTRootUI-Medium"), url("Ptrootuimedium.woff2") format("woff2"), url("Ptrootuimedium.woff") format("woff"), url("Ptrootuimedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI Light"), local("PTRootUI-Light"), url("Ptrootuilight.woff2") format("woff2"), url("Ptrootuilight.woff") format("woff"), url("Ptrootuilight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI"), local("PTRootUI-Regular"), url("Ptrootui.woff2") format("woff2"), url("Ptrootui.woff") format("woff"), url("Ptrootui.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: local("PT Root UI Bold"), local("PTRootUI-Bold"), url("Ptrootuibold.woff2") format("woff2"), url("Ptrootuibold.woff") format("woff"), url("Ptrootuibold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0 auto;
+  background: linear-gradient(105.2deg, #0E2931 -12.88%, #020A0D 40.25%);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "PT Root UI";
+}

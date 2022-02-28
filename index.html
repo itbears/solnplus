@@ -2,15 +2,64 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>СОЛНПЛЮС+</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>СОЛНПЛЮС+</title>
 </head>
 
 <body>
-  <header class="header">Хедер</header>
+  <header class="header">
+    <svg class="header__logo" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="#B40A1B" />
+    </svg>
+    <p class="header__nameing">Solnplus</p>
+    <button class="header__toggle">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="intro__container">
+        <!-- <div class="intro__titles-container"> -->
+          <h1 class="intro__title">
+            Проектирование и монтаж
+          </h1>
+          <p class="intro__subtitle">
+            систем безопасности
+            видеонаблюдения
+            охранно-пожарных систем
+          </p>
+          <img class="intro__camera" src="img/camera.png" alt="Камера">
+        <!-- </div> -->
+        <div class="intro__description">
+          <div class="intro__container-text">
+            <p class="intro__text">
+              Разрабатываем и устанавливаем информационно телекоммуникационные системы.
+            </p>
+            <p class="intro__text">
+              Работаем с индивидуальными системами умного дома, структурированные кабельные системы.
+            </p>
+          </div>
+          <div class="intro__cross">
+            <svg class="cross" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.2501 1.0047C11.3936 1.08758 11.4984 1.22409 11.5413 1.3842C11.5842 1.54432 11.5617 1.71491 11.4788 1.85847L8.35384 7.27112L13.7665 10.3961C13.9101 10.479 14.0148 10.6155 14.0577 10.7756C14.1006 10.9357 14.0781 11.1063 13.9953 11.2499C13.9124 11.3934 13.7759 11.4982 13.6158 11.5411C13.4556 11.584 13.2851 11.5615 13.1415 11.4787L7.72884 8.35366L4.60384 13.7663C4.52096 13.9099 4.38445 14.0146 4.22434 14.0575C4.06422 14.1004 3.89363 14.078 3.75007 13.9951C3.60652 13.9122 3.50177 13.7757 3.45887 13.6156C3.41597 13.4555 3.43843 13.2849 3.52131 13.1413L6.64631 7.72866L1.23365 4.60366C1.0901 4.52078 0.985347 4.38426 0.942445 4.22415C0.899543 4.06404 0.922003 3.89344 1.00488 3.74989C1.08776 3.60634 1.22427 3.50159 1.38439 3.45869C1.5445 3.41578 1.7151 3.43824 1.85865 3.52112L7.27131 6.64612L10.3963 1.23347C10.4792 1.08991 10.6157 0.985164 10.7758 0.942262C10.9359 0.89936 11.1065 0.921819 11.2501 1.0047Z"
+                fill="#ECECEC" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 <script src="js/index.js"></script>

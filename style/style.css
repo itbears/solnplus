@@ -6,7 +6,6 @@
   top: 0;
   z-index: 1;
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +14,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .header__name {
   text-transform: uppercase;
   font-size: 18px;
@@ -23,7 +21,9 @@
   margin-right: 280px;
   color: #fff;
 }
-
+.header__name-active {
+  display: none;
+}
 .header__toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,19 +43,107 @@
   cursor: pointer;
   width: 35px;
 }
-
 .header__toggle span {
   background-color: white;
   width: 30px;
   height: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
-
-.header__toggle span:first-of-type {
-  margin-bottom: 2px;
-}
-
 .header__toggle span:last-of-type {
-  margin-top: 3px;
+  margin-top: 5px;
+}
+.header__toggle-close span {
+  background-color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header__toggle-close span:first-of-type {
+  -webkit-transform: rotate(381deg) translateX(1px) translateY(4px);
+          transform: rotate(381deg) translateX(1px) translateY(4px);
+}
+.header__toggle-close span:last-of-type {
+  -webkit-transform: rotate(-381deg) translateX(0px) translateY(-2px);
+          transform: rotate(-381deg) translateX(0px) translateY(-2px);
+}
+.header__logo-active {
+  display: none;
+}
+.header__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__container-active {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.burger {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  top: -100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.burger__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.burger__space {
+  width: 620px;
+}
+.burger__nav {
+  width: 400px;
+  height: 100vh;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.burger__menu-item:first-of-type {
+  margin-bottom: 20px;
+}
+.burger__menu-list {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 54px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.burger__menu-link {
+  color: black;
+  text-transform: uppercase;
+}
+.burger__menu-link:hover {
+  color: #9A9A9A;
+}
+.burger__contacts-list {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.burger__contacts-link {
+  color: black;
+  text-transform: uppercase;
+}
+.burger__contacts-link:hover {
+  color: #9A9A9A;
+}
+.burger__menu-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.burger__active {
+  top: 0;
 }
 
 .intro {
@@ -67,14 +155,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-linear-gradient(344.8deg, #0e2931 -12.88%, #020a0d 40.25%);
-  background: -o-linear-gradient(344.8deg, #0e2931 -12.88%, #020a0d 40.25%);
   background: linear-gradient(105.2deg, #0e2931 -12.88%, #020a0d 40.25%);
   background-repeat: no-repeat;
   color: #fff;
   position: relative;
 }
-
 .intro__container {
   height: 100%;
   display: -webkit-box;
@@ -86,7 +171,6 @@
           flex-direction: column;
   position: relative;
 }
-
 .intro__pic {
   position: absolute;
   right: 0;
@@ -94,14 +178,12 @@
   width: 70%;
   height: 100%;
 }
-
 .intro__pic-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .intro__title {
   margin: 0px;
   margin-top: auto;
@@ -112,7 +194,6 @@
   max-width: 670px;
   font-weight: 500;
 }
-
 .intro__title::after {
   content: "систем безопасности видеонаблюдения охранно-пожарных систем";
   position: absolute;
@@ -123,11 +204,9 @@
   margin-top: 14px;
   font-weight: 400;
 }
-
 .intro__subtitle {
   display: none;
 }
-
 .intro__description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,13 +220,11 @@
   margin-top: auto;
   margin-bottom: 25px;
 }
-
 .intro__container-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .intro__text {
   font-weight: normal;
   font-size: 16px;
@@ -156,20 +233,16 @@
   margin: 0px;
   max-width: 400px;
 }
-
 .intro__text:last-of-type {
   padding-left: 30px;
 }
 
 .cross {
   -webkit-transition: all 0.9s;
-  -o-transition: all 0.9s;
   transition: all 0.9s;
 }
-
 .cross:hover {
   -webkit-transform: rotate(-360deg);
-      -ms-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
@@ -177,66 +250,73 @@
   .intro__title {
     font-size: 60px;
   }
+
   .intro__title::after {
     font-size: 13px;
   }
 }
-
 @media (max-width: 960px) {
   .header {
     max-width: 800px;
     padding: 0px 80px;
   }
+
   .intro {
     max-width: 800px;
     padding: 0px 80px;
   }
+
   .header__nameing {
     margin-right: 0px;
   }
 }
-
 @media (max-width: 700px) {
   .header {
     padding: 0px 55px;
   }
+
   .intro {
     padding: 0px 55px;
   }
+
   .intro__title {
     font-size: 68px;
   }
+
   .intro__title::after {
     font-size: 15px;
   }
 }
-
 @font-face {
   font-family: "PT Root UI";
   src: local("PT Root UI Medium"), local("PTRootUI-Medium"), url("Ptrootuimedium.woff2") format("woff2"), url("Ptrootuimedium.woff") format("woff"), url("Ptrootuimedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "PT Root UI";
   src: local("PT Root UI Light"), local("PTRootUI-Light"), url("Ptrootuilight.woff2") format("woff2"), url("Ptrootuilight.woff") format("woff"), url("Ptrootuilight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "PT Root UI";
   src: local("PT Root UI"), local("PTRootUI-Regular"), url("Ptrootui.woff2") format("woff2"), url("Ptrootui.woff") format("woff"), url("Ptrootui.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "PT Root UI";
   src: local("PT Root UI Bold"), local("PTRootUI-Bold"), url("Ptrootuibold.woff2") format("woff2"), url("Ptrootuibold.woff") format("woff"), url("Ptrootuibold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 *,
@@ -257,4 +337,3 @@ body {
   margin: auto;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */

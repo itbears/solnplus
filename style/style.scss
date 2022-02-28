@@ -27,7 +27,12 @@
     font-weight: 700;
     font-style: normal;
 }
-
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 *,
 *::before,
 *::after {

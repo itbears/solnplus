@@ -25,7 +25,7 @@
             object-fit: cover;
         }
     }
-    &__title{
+    &__title {
         margin: 0px;
         margin-top: auto;
         margin-right: 0px;
@@ -34,7 +34,7 @@
         line-height: 89px;
         max-width: 670px;
         font-weight: 500;
-        &::after{
+        &::after {
             content: "систем безопасности видеонаблюдения охранно-пожарных систем";
             position: absolute;
             font-size: 17px;
@@ -45,34 +45,34 @@
             font-weight: 400;
         }
     }
-    &__subtitle{
+    &__subtitle {
         display: none;
     }
-    &__description{
+    &__description {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: auto;
         margin-bottom: 25px;
     }
-    &__container-text{
+    &__container-text {
         display: flex;
     }
-    &__text{
+    &__text {
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
         max-width: 370px;
         margin: 0px;
         max-width: 400px;
-        &:last-of-type{
-            padding-left: 30px;
+        &:last-of-type {
+            padding-left: 10px;
         }
     }
 }
 .cross {
     transition: all 0.9s;
-    &:hover{
+    &:hover {
         transform: rotate(-360deg);
     }
 }

@@ -1,9 +1,11 @@
 @import "./components/intro";
 @import "./components/header";
+@import "./components/about";
+@import "./components/partners";
 @font-face {
     font-family: "PT Root UI";
     src: local("PT Root UI Medium"), local("PTRootUI-Medium"), url("Ptrootuimedium.woff2") format("woff2"),
-        url("fonts/Ptrootuimedium.woff2") format("woff"), url("fonts/Ptrootuimedium.ttf") format("truetype");
+        url("fonts/Ptrootuimedium.woff") format("woff"), url("fonts/Ptrootuimedium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }

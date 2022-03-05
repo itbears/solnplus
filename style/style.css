@@ -413,6 +413,12 @@
     max-width: 540px;
   }
 }
+.about__adventages-item {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
 .about__services-item {
   font-weight: 500;
   font-size: 22px;
@@ -571,6 +577,8 @@
 
   .about__img-5 {
     display: block;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 }
 .partners {

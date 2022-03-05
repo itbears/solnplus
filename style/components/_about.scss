@@ -87,9 +87,16 @@
             max-width: 540px;   
         }
     }
+    &__adventages-item{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
     &__services-item{
         font-weight: 500;
         font-size: 22px;
+
         text-transform: uppercase;
         border-bottom: 0.5px solid #0C0C0C;
         padding-top: 39px;
@@ -208,5 +215,7 @@
     }
     .about__img-5{
         display: block;
+        line-height: 26px;
+        text-transform: uppercase;
     }
-}
+  }

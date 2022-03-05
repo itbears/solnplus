@@ -1,7 +1,7 @@
-@import "./components/intro";
 @import "./components/header";
 @import "./components/about";
 @import "./components/partners";
+@import "./components/intro";
 @font-face {
     font-family: "PT Root UI";
     src: local("PT Root UI Medium"), local("PTRootUI-Medium"), url("Ptrootuimedium.woff2") format("woff2"),
@@ -30,10 +30,10 @@
     font-weight: 700;
     font-style: normal;
 }
-li{
+li {
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
 }
 *,

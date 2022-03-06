@@ -1,7 +1,9 @@
 // Шапка
-const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header');
 const headerToggleBtn = document.querySelector('.header__toggle');
+const body = document.querySelector("body")
 
 headerToggleBtn.addEventListener('click', () => {
-    burger.classList.toggle('burger__active')
+    menu.classList.toggle('header__active')
+    body.classList.toggle("scroll-off")
 });

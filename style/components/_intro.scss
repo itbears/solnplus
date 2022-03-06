@@ -1,10 +1,11 @@
 .intro {
-    margin-top: 0px;
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(105.2deg, #0e2931 -12.88%, #020a0d 40.25%);
+    background: url("../../img/back-intro.jpg") no-repeat;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #fff;
     position: relative;
     &__container {
@@ -34,8 +35,7 @@
         line-height: 89px;
         max-width: 670px;
         font-weight: 500;
-        &::after {
-            content: "систем безопасности видеонаблюдения охранно-пожарных систем";
+        span {
             position: absolute;
             font-size: 17px;
             max-width: 260px;
@@ -43,6 +43,7 @@
             margin-left: 20px;
             margin-top: 14px;
             font-weight: 400;
+            white-space: nowrap;
         }
     }
     &__subtitle {
@@ -70,44 +71,79 @@
         }
     }
 }
-.cross {
-    transition: all 0.9s;
-    &:hover {
-        transform: rotate(-360deg);
-    }
-}
-@media (max-width: 1105px) {
-    .intro__title {
-        font-size: 60px;
-    }
-    .intro__title::after {
-        font-size: 13px;
-    }
-}
-@media (max-width: 960px) {
-    .header {
-        max-width: 800px;
-        padding: 0px 80px;
-    }
+
+@media screen and (max-width: 700px) {
     .intro {
-        max-width: 800px;
-        padding: 0px 80px;
-    }
-    .header__nameing {
-        margin-right: 0px;
+        &__title {
+            font-size: 68px;
+            line-height: 82px;
+            span {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+        &__text {
+            &:last-of-type {
+                padding-left: 0;
+                margin-top: 25px;
+            }
+        }
+        &__description {
+            align-items: flex-end;
+        }
+        &__container {
+            &-text {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
     }
 }
-@media (max-width: 700px) {
-    .header {
-        padding: 0px 55px;
-    }
+
+@media screen and (max-width: 640px) {
     .intro {
-        padding: 0px 55px;
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+            span {
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
     }
-    .intro__title {
-        font-size: 68px;
-    }
-    .intro__title::after {
-        font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        background: url("../../img/marcos-paulo-prado-QYVCzK-bnYU-unsplash\ 1.jpg") no-repeat;
+        background-size: cover;
+        background-position: right;
+        max-height: 550px;
+        &__title {
+            font-size: 33px;
+            line-height: 40px;
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 12px;
+                line-height: 14px;
+                position: static;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 14px;
+            &:last-of-type {
+                margin-top: 15px;
+            }
+        }
+        &__description {
+            flex-direction: column-reverse;
+        }
+        &__cross {
+            margin-bottom: 40px;
+        }
     }
 }

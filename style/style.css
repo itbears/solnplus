@@ -537,6 +537,137 @@ body {
   .about__list-item-text {
     font-size: 22px;
     line-height: 26px;
+    padding: 25px 0;
+  }
+}
+
+.works {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.works__title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #0c0c0c;
+  max-width: 760px;
+  margin-left: 410px;
+}
+
+.works__line {
+  height: 0.5px;
+  width: 100%;
+  background-color: #0c0c0c;
+  display: block;
+}
+
+.works__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.works__cross {
+  max-width: 410px;
+  padding-top: 345px;
+  width: 100%;
+}
+
+.works__list {
+  max-width: 750px;
+  width: 100%;
+}
+
+.works__list-item {
+  border-bottom: 0.5px solid #0c0c0c;
+  width: 100%;
+}
+
+.works__list-item-text {
+  padding: 35px 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #0c0c0c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__list-item-text-num {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #0c0c0c;
+  margin-right: 60px;
+  width: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .works {
+    margin: 120px 0;
+  }
+  .works__cross {
+    padding-top: 395px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .works {
+    margin-bottom: 70px;
+  }
+  .works__title {
+    margin-left: 0;
+  }
+  .works__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .works__cross {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+  }
+  .works__cross-svg {
+    width: 37px;
+    height: 37px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .works {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .works {
+    margin-bottom: 15px;
+  }
+  .works__title {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .works__list-item-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .works__list-item-text-num {
+    font-size: 28px;
+    line-height: 34px;
+    margin-right: 45px;
+    width: 34px;
   }
 }
 
